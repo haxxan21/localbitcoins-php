@@ -1,7 +1,6 @@
 # localbitcoins-php-laravel
 
-Interact with localbitcoins.com usng this package.
-Packagist Link <a href="https://packagist.org/users/haxxan21/">localbitcoin/endpoints</a>
+Interact with localbitcoins.com usng this package <a href="https://packagist.org/users/haxxan21/">localbitcoin/endpoints</a>
 
 ## Installation
 
