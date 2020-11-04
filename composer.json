@@ -1,0 +1,17 @@
+{
+    "name": "localbitcoin/endpoints",
+    "description": "LocalBitcoins -- A library to interact with localbitcoins.com through laravel. localbitcoins.com is a cryptocurrency exchange where anyone can purchase/sell cryptocurrency",
+    "type": "library",
+    "license": "MIT",
+    "authors": [{
+        "name": "Tayyeb Hassan",
+        "email": "malikhassan053@gmail.com"
+    }],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Localbitcoin\\Endpoints\\": "src/"
+        }
+    },
+    "require": {}
+}
