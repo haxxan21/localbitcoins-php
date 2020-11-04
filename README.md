@@ -49,5 +49,40 @@ $localbtc = new Localbtc();
 
 ## Documentation
 
-Coming soon!
+After instantiating the Localbtc class object, you just need to call methods for different endpoints as
+```
+$localbtc->Dashboard();
+```
+Methods follow the following naming conventions. Access them like below.
+To return all ads of the authenticated user. Here's the url in official documention at <a href="https://localbitcoins.com/api-docs">localbitcoins.com</a> 
+```
+/api/ads
+```
+To use the method for advertisements capitalise the first letter of ads and use the method
+```
+$localbtc->Ads();
+```
+In some cases URL is having a hyphen like 
+```
+/api/ad-get/
+```
+To resolve this access the Method like 
+```
+$localbtc->AdGet();
+```
+In case there are some missing methods for certain endpoints, to implement the functionality you can use the Query method like this.
+```
+return $this->Query('api-endpoint-url','','',array(optional-parameters));
+```
+As for /api/ads-get
+```
+return $this->Query('/api/ad-get/','','', array('ads'=>$ad_id));
+```
+## Disclaimer
+
+Pagination isn't tested at this point. Feel free to contribute to this repository.
+
+## Contact
+
+Email me at <a href="mailto:malikhassan053@gmail.com">malikhassan053@gmail.com</a>
 
