@@ -17,8 +17,8 @@ class Localbtc{
 
     public function __construct()
     {
-        $this->API_AUTH_KEY = config('app.API_AUTH_KEY');
-        $this->API_AUTH_SECRET = config('app.API_AUTH_SECRET');
+        $this->API_AUTH_KEY = config('localbtc.API_AUTH_KEY');
+        $this->API_AUTH_SECRET = config('localbtc.API_AUTH_SECRET');
     }
 
     /**
