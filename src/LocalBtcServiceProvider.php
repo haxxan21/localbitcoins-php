@@ -11,9 +11,9 @@ class LocalBtcServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->publishes([
-            __DIR__.'/config/localbtc.php' => config_path('localbtc.php'),
-        ]);
+         $this->publishes([
+            dirname(__DIR__).'/config/localbtc.php' => config_path('localbtc.php'),
+        ], 'config');
     }
 
      /**
@@ -22,7 +22,7 @@ class LocalBtcServiceProvider extends ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom(
-            __DIR__.'/config/localbtc.php', 'localbtc'
+            dirname(__DIR__).'/config/localbtc.php', 'localbtc'
         );
     }
 }
