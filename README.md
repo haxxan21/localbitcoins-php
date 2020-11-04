@@ -58,19 +58,19 @@ To return all ads of the authenticated user. Here's the url in official document
 ```
 /api/ads
 ```
-To use the method for advertisements capitalise the first letter of ads and use the method
+To use the method for advertisements, capitalise the first letter of ads and use the method
 ```
 $localbtc->Ads();
 ```
-In some cases URL is having a hyphen like 
+In some cases, URL is having a hyphen like 
 ```
 /api/ad-get/
 ```
-To resolve this access the Method like 
+To resolve this, access the Method like 
 ```
 $localbtc->AdGet();
 ```
-In case there are some missing methods for certain endpoints, to implement the functionality you can use the Query method like this.
+In case, there are some missing methods for certain endpoints, to implement the functionality you can use the Query method like this.
 ```
 return $this->Query('api-endpoint-url','','',array(optional-parameters));
 ```
