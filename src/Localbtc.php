@@ -108,9 +108,7 @@ class Localbtc{
 		// return result
 		return json_decode($res);
     }
-
-    public function index(){
-        dd(Localbtc::dashboard());
-    }
-
+	public function index(){
+		
+	}
 }
