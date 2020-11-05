@@ -108,7 +108,4 @@ class Localbtc{
 		// return result
 		return json_decode($res);
     }
-	public function index(){
-		
-	}
 }
